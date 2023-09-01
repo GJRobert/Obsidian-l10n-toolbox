@@ -159,7 +159,7 @@ tr.comments div  { color: #aaa; }
   <div class='graph'>
     <div class='percent-done' style='width: 100%'>&nbsp;</div>
   </div>
-  <div class='legend'>已翻譯 1729 筆，總計 1729 筆 (完成度為 100%)  </div>
+  <div class='legend'>已翻譯 1852 筆，總計 1852 筆 (完成度為 100%)  </div>
 </div>
 <table class='translations'>
   <thead>
@@ -315,15 +315,45 @@ setting.editor.option-strict-line-break-description</td>
 </tr>
 <tr class='i'>
 <td class='src' >
-setting.editor.option-show-frontmatter</td>
+setting.editor.option-properties-in-document</td>
 <td class='tra'  lang='zh-Hant'>
-顯示正文前頁</td>
+Properties in document</td>
 </tr>
 <tr class='i'>
 <td class='src' >
-setting.editor.option-show-frontmatter-description</td>
+setting.editor.option-properties-in-document-description</td>
 <td class='tra'  lang='zh-Hant'>
-在預覽狀態時顯示正文前頁。關閉選項則隱藏前頁內容。</td>
+Choose how properties are displayed within the editor. Select "source" to have the properties displayed as YAML.</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+setting.editor.option-properties-hidden</td>
+<td class='tra'  lang='zh-Hant'>
+Hidden</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+setting.editor.option-properties-visible</td>
+<td class='tra'  lang='zh-Hant'>
+Visible</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+setting.editor.option-properties-source</td>
+<td class='tra'  lang='zh-Hant'>
+Source</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+setting.editor.option-show-file-properties</td>
+<td class='tra'  lang='zh-Hant'>
+Show properties in document</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+setting.editor.option-show-file-properties-description</td>
+<td class='tra'  lang='zh-Hant'>
+Show the properties section at the top of the file.</td>
 </tr>
 <tr class='i'>
 <td class='src' >
@@ -1263,6 +1293,24 @@ setting.appearance.option-frame-native</td>
 </tr>
 <tr class='i'>
 <td class='src' >
+setting.appearance.option-custom-icon</td>
+<td class='tra'  lang='zh-Hant'>
+Custom app icon</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+setting.appearance.option-custom-icon-desc</td>
+<td class='tra'  lang='zh-Hant'>
+Set a custom icon for the app</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+setting.appearance.button-choose-custom-icon</td>
+<td class='tra'  lang='zh-Hant'>
+Choose custom icon</td>
+</tr>
+<tr class='i'>
+<td class='src' >
 setting.appearance.option-configure-ribbon</td>
 <td class='tra'  lang='zh-Hant'>
 功能區選單</td>
@@ -1749,6 +1797,12 @@ setting.about.label-app</td>
 </tr>
 <tr class='i'>
 <td class='src' >
+setting.about.label-add-own-language</td>
+<td class='tra'  lang='zh-Hant'>
+See how to add your language to Obsidian.</td>
+</tr>
+<tr class='i'>
+<td class='src' >
 setting.account.name</td>
 <td class='tra'  lang='zh-Hant'>
 帳號</td>
@@ -1902,6 +1956,24 @@ setting.account.label-no-account</td>
 setting.account.link-sign-up-now</td>
 <td class='tra'  lang='zh-Hant'>
 現在註冊</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+setting.account.label-mfa-code</td>
+<td class='tra'  lang='zh-Hant'>
+6-digit 2FA code</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+setting.account.mfa-wrong-format</td>
+<td class='tra'  lang='zh-Hant'>
+The 2FA authenticator code must be 6 digits.</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+setting.account.mfa-verification-failed</td>
+<td class='tra'  lang='zh-Hant'>
+2FA code is incorrect, please double check your authenticator app.</td>
 </tr>
 <tr class='i'>
 <td class='src' >
@@ -2514,6 +2586,18 @@ setting.mobile-toolbar.option-code</td>
 setting.mobile-toolbar.option-blockquote</td>
 <td class='tra'  lang='zh-Hant'>
 切換區塊引用</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+setting.mobile-toolbar.option-inline-math</td>
+<td class='tra'  lang='zh-Hant'>
+Toggle inline math</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+setting.mobile-toolbar.option-math-block</td>
+<td class='tra'  lang='zh-Hant'>
+Toggle math block</td>
 </tr>
 <tr class='i'>
 <td class='src' >
@@ -3249,6 +3333,12 @@ interface.menu.toggle-source-mode</td>
 interface.menu.toggle-reading-view</td>
 <td class='tra'  lang='zh-Hant'>
 閱讀檢視模式</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+interface.menu.add-property</td>
+<td class='tra'  lang='zh-Hant'>
+Add file property</td>
 </tr>
 <tr class='i'>
 <td class='src' >
@@ -4074,6 +4164,24 @@ commands.search-replace-current-file</td>
 </tr>
 <tr class='i'>
 <td class='src' >
+commands.add-property</td>
+<td class='tra'  lang='zh-Hant'>
+Add file property</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+commands.edit-property</td>
+<td class='tra'  lang='zh-Hant'>
+Edit file property</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+commands.clear-properties</td>
+<td class='tra'  lang='zh-Hant'>
+Clear file properties</td>
+</tr>
+<tr class='i'>
+<td class='src' >
 commands.open-settings</td>
 <td class='tra'  lang='zh-Hant'>
 開啟設定</td>
@@ -4161,6 +4269,12 @@ commands.toggle-default-new-tab-mode</td>
 commands.focus-editor</td>
 <td class='tra'  lang='zh-Hant'>
 移至編輯區</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+commands.toggle-fold-properties</td>
+<td class='tra'  lang='zh-Hant'>
+Toggle fold properties in current file</td>
 </tr>
 <tr class='i'>
 <td class='src' >
@@ -4278,6 +4392,18 @@ commands.insert-callout</td>
 </tr>
 <tr class='i'>
 <td class='src' >
+commands.insert-code-block</td>
+<td class='tra'  lang='zh-Hant'>
+Insert code block</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+commands.insert-math-block</td>
+<td class='tra'  lang='zh-Hant'>
+Insert math block</td>
+</tr>
+<tr class='i'>
+<td class='src' >
 commands.edit-file-title</td>
 <td class='tra'  lang='zh-Hant'>
 編輯檔案標題</td>
@@ -4377,6 +4503,36 @@ commands.open-in-new-window</td>
 commands.rename-current-file</td>
 <td class='tra'  lang='zh-Hant'>
 重新命名目前檔案</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+commands.go-to-prev-tab</td>
+<td class='tra'  lang='zh-Hant'>
+Go to previous tab</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+commands.go-to-next-tab</td>
+<td class='tra'  lang='zh-Hant'>
+Go to next tab</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+commands.go-to-last-tab</td>
+<td class='tra'  lang='zh-Hant'>
+Go to last tab</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+commands.go-to-nth-tab</td>
+<td class='tra'  lang='zh-Hant'>
+Go to tab #{{n}}</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+commands.show-release-notes</td>
+<td class='tra'  lang='zh-Hant'>
+Show release notes</td>
 </tr>
 <tr class='i'>
 <td class='src' >
@@ -4536,6 +4692,12 @@ dialogue.button-continue</td>
 </tr>
 <tr class='i'>
 <td class='src' >
+dialogue.button-choose</td>
+<td class='tra'  lang='zh-Hant'>
+Choose</td>
+</tr>
+<tr class='i'>
+<td class='src' >
 dialogue.preparing-pdf</td>
 <td class='tra'  lang='zh-Hant'>
 正在準備 PDF……</td>
@@ -4674,6 +4836,24 @@ menu-items.export-pdf</td>
 </tr>
 <tr class='i'>
 <td class='src' >
+menu-items.insert-attachment</td>
+<td class='tra'  lang='zh-Hant'>
+Insert Attachment...</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+menu-items.insert-codeblock</td>
+<td class='tra'  lang='zh-Hant'>
+Code Block</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+menu-items.insert-math-block</td>
+<td class='tra'  lang='zh-Hant'>
+Math Block</td>
+</tr>
+<tr class='i'>
+<td class='src' >
 menu-items.toggle-bullet-list</td>
 <td class='tra'  lang='zh-Hant'>
 無序清單</td>
@@ -4716,6 +4896,12 @@ menu-items.toggle-italics</td>
 </tr>
 <tr class='i'>
 <td class='src' >
+menu-items.toggle-inline-math</td>
+<td class='tra'  lang='zh-Hant'>
+Math</td>
+</tr>
+<tr class='i'>
+<td class='src' >
 menu-items.toggle-highlight</td>
 <td class='tra'  lang='zh-Hant'>
 反白</td>
@@ -4731,6 +4917,12 @@ menu-items.toggle-strikethrough</td>
 menu-items.toggle-comments</td>
 <td class='tra'  lang='zh-Hant'>
 註解</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+menu-items.folding-menu</td>
+<td class='tra'  lang='zh-Hant'>
+Folding</td>
 </tr>
 <tr class='i'>
 <td class='src' >
@@ -5208,6 +5400,12 @@ plugins.search.label-match-exact-text</td>
 </tr>
 <tr class='i'>
 <td class='src' >
+plugins.search.label-match-property</td>
+<td class='tra'  lang='zh-Hant'>
+Contains property:</td>
+</tr>
+<tr class='i'>
+<td class='src' >
 plugins.search.label-match-all</td>
 <td class='tra'  lang='zh-Hant'>
 符合所有：</td>
@@ -5424,6 +5622,18 @@ plugins.search.label-search-options</td>
 </tr>
 <tr class='i'>
 <td class='src' >
+plugins.search.label-properties-group</td>
+<td class='tra'  lang='zh-Hant'>
+Properties</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.search.label-tags-group</td>
+<td class='tra'  lang='zh-Hant'>
+Tags</td>
+</tr>
+<tr class='i'>
+<td class='src' >
 plugins.search.tooltip-read-more</td>
 <td class='tra'  lang='zh-Hant'>
 深入了解</td>
@@ -5469,6 +5679,12 @@ plugins.search.label-line-option-description</td>
 plugins.search.label-section-option-description</td>
 <td class='tra'  lang='zh-Hant'>
 搜尋同一標題下的關鍵字</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.search.label-property-option-description</td>
+<td class='tra'  lang='zh-Hant'>
+match property</td>
 </tr>
 <tr class='i'>
 <td class='src' >
@@ -6049,6 +6265,12 @@ plugins.tag-pane.name</td>
 </tr>
 <tr class='i'>
 <td class='src' >
+plugins.tag-pane.short-name</td>
+<td class='tra'  lang='zh-Hant'>
+Tags</td>
+</tr>
+<tr class='i'>
+<td class='src' >
 plugins.tag-pane.desc</td>
 <td class='tra'  lang='zh-Hant'>
 顯示所有標籤及其出現的次數。</td>
@@ -6106,6 +6328,108 @@ plugins.tag-pane.action-collapse-all</td>
 plugins.tag-pane.action-expand-all</td>
 <td class='tra'  lang='zh-Hant'>
 全部展開</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.properties.name</td>
+<td class='tra'  lang='zh-Hant'>
+Properties view</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.properties.desc</td>
+<td class='tra'  lang='zh-Hant'>
+Show the metadata for your files.</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.properties.name-global</td>
+<td class='tra'  lang='zh-Hant'>
+All properties</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.properties.name-local</td>
+<td class='tra'  lang='zh-Hant'>
+File properties</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.properties.tab-title</td>
+<td class='tra'  lang='zh-Hant'>
+File properties for {{displayText}}</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.properties.action-show</td>
+<td class='tra'  lang='zh-Hant'>
+Show all properties</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.properties.action-show-local</td>
+<td class='tra'  lang='zh-Hant'>
+Show file properties</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.properties.action-edit</td>
+<td class='tra'  lang='zh-Hant'>
+Edit</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.properties.opt-unassign-type</td>
+<td class='tra'  lang='zh-Hant'>
+Unassign type</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.properties.label-no-properties</td>
+<td class='tra'  lang='zh-Hant'>
+No properties found.</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.properties.label-sort-by-name-a-to-z</td>
+<td class='tra'  lang='zh-Hant'>
+Property name (A to Z)</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.properties.label-sort-by-name-z-to-a</td>
+<td class='tra'  lang='zh-Hant'>
+Property name (Z to A)</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.properties.label-sort-by-frequency-high-to-low</td>
+<td class='tra'  lang='zh-Hant'>
+Frequency (high to low)</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.properties.label-sort-by-frequency-low-to-high</td>
+<td class='tra'  lang='zh-Hant'>
+Frequency (low to high)</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.properties.action-collapse-all</td>
+<td class='tra'  lang='zh-Hant'>
+Collapse all</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.properties.action-expand-all</td>
+<td class='tra'  lang='zh-Hant'>
+Expand all</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.properties.action-open-local</td>
+<td class='tra'  lang='zh-Hant'>
+Open file properties</td>
 </tr>
 <tr class='i'>
 <td class='src' >
@@ -6193,6 +6517,12 @@ plugins.bookmarks.action-bookmark</td>
 </tr>
 <tr class='i'>
 <td class='src' >
+plugins.bookmarks.action-add-bookmark</td>
+<td class='tra'  lang='zh-Hant'>
+Add bookmark</td>
+</tr>
+<tr class='i'>
+<td class='src' >
 plugins.bookmarks.action-edit-bookmark</td>
 <td class='tra'  lang='zh-Hant'>
 編輯書籤</td>
@@ -6265,9 +6595,21 @@ plugins.bookmarks.label-no-bookmarks</td>
 </tr>
 <tr class='i'>
 <td class='src' >
-plugins.bookmarks.label-untitled-folder</td>
+plugins.bookmarks.label-invalid-data</td>
 <td class='tra'  lang='zh-Hant'>
-未命名資料夾</td>
+Failed to load bookmarks.</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.bookmarks.label-invalid-data-desc</td>
+<td class='tra'  lang='zh-Hant'>
+The data file is corrupted.</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.bookmarks.label-untitled-group</td>
+<td class='tra'  lang='zh-Hant'>
+Untitled group</td>
 </tr>
 <tr class='i'>
 <td class='src' >
@@ -6283,12 +6625,6 @@ plugins.bookmarks.menu-opt-edit</td>
 </tr>
 <tr class='i'>
 <td class='src' >
-plugins.bookmarks.menu-opt-new-folder</td>
-<td class='tra'  lang='zh-Hant'>
-新增資料夾</td>
-</tr>
-<tr class='i'>
-<td class='src' >
 plugins.bookmarks.menu-opt-remove</td>
 <td class='tra'  lang='zh-Hant'>
 移除</td>
@@ -6298,6 +6634,12 @@ plugins.bookmarks.menu-opt-remove</td>
 plugins.bookmarks.menu-opt-rename</td>
 <td class='tra'  lang='zh-Hant'>
 重新命名</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.bookmarks.menu-opt-bookmark-block</td>
+<td class='tra'  lang='zh-Hant'>
+Bookmark this block...</td>
 </tr>
 <tr class='i'>
 <td class='src' >
@@ -8575,6 +8917,12 @@ plugins.sync.label-file-deleted</td>
 </tr>
 <tr class='i'>
 <td class='src' >
+plugins.sync.label-file-renamed-from</td>
+<td class='tra'  lang='zh-Hant'>
+This file was renamed from "{{filepath}}"</td>
+</tr>
+<tr class='i'>
+<td class='src' >
 plugins.sync.label-no-earlier-version</td>
 <td class='tra'  lang='zh-Hant'>
 這個檔案已無更舊版本。</td>
@@ -8740,6 +9088,24 @@ plugins.sync.label-vault-created-time</td>
 plugins.sync.tooltip-delete-remote-vault</td>
 <td class='tra'  lang='zh-Hant'>
 刪除</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.sync.tooltip-rename-remote-vault</td>
+<td class='tra'  lang='zh-Hant'>
+Rename</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.sync.label-rename-remote-vault</td>
+<td class='tra'  lang='zh-Hant'>
+Rename remote vault "{{name}}"</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.sync.label-rename-remote-vault-desc</td>
+<td class='tra'  lang='zh-Hant'>
+Enter a new name for this remote vault.</td>
 </tr>
 <tr class='i'>
 <td class='src' >
@@ -8986,6 +9352,12 @@ plugins.sync.msg-restoring</td>
 plugins.sync.msg-restoring-complete</td>
 <td class='tra'  lang='zh-Hant'>
 `還原程序完成：{{succeeded}} 筆成功，{{failed}} 筆失敗。`</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+plugins.sync.option-vault-size</td>
+<td class='tra'  lang='zh-Hant'>
+Vault size</td>
 </tr>
 <tr class='i'>
 <td class='src' >
@@ -9409,6 +9781,12 @@ plugins.sync.option-contact-support-desc</td>
 </tr>
 <tr class='i'>
 <td class='src' >
+plugins.sync.button-copy-debug</td>
+<td class='tra'  lang='zh-Hant'>
+Copy debug info</td>
+</tr>
+<tr class='i'>
+<td class='src' >
 plugins.sync.button-email-support</td>
 <td class='tra'  lang='zh-Hant'>
 電子郵件支援</td>
@@ -9664,12 +10042,6 @@ plugins.note-composer.label-confirm-file-merge</td>
 plugins.note-composer.button-merge</td>
 <td class='tra'  lang='zh-Hant'>
 合併</td>
-</tr>
-<tr class='i'>
-<td class='src' >
-plugins.note-composer.button-merge-do-not-ask-again</td>
-<td class='tra'  lang='zh-Hant'>
-全部合併且不再詢問</td>
 </tr>
 <tr class='i'>
 <td class='src' >
@@ -10441,6 +10813,360 @@ plugins.canvas.msg-export-failed-empty-canvas</td>
 </tr>
 <tr class='i'>
 <td class='src' >
+pdf.action-highlight-all</td>
+<td class='tra'  lang='zh-Hant'>
+Highlight all</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.action-match-diacritics</td>
+<td class='tra'  lang='zh-Hant'>
+Match diacritics</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.action-whole-words</td>
+<td class='tra'  lang='zh-Hant'>
+Whole words</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.action-show-thumbnails</td>
+<td class='tra'  lang='zh-Hant'>
+Thumbnails</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.action-show-outline</td>
+<td class='tra'  lang='zh-Hant'>
+Table of contents</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.action-reveal-in-outline</td>
+<td class='tra'  lang='zh-Hant'>
+Reveal page in table of contents</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.action-toggle-sidebar</td>
+<td class='tra'  lang='zh-Hant'>
+Toggle sidebar</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.action-previous-page</td>
+<td class='tra'  lang='zh-Hant'>
+Previous page</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.action-next-page</td>
+<td class='tra'  lang='zh-Hant'>
+Next page</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.action-fit-width</td>
+<td class='tra'  lang='zh-Hant'>
+Fit width</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.action-fit-height</td>
+<td class='tra'  lang='zh-Hant'>
+Fit height</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.action-save-p-d-f-location</td>
+<td class='tra'  lang='zh-Hant'>
+Save current position in document</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.action-copy-annotation</td>
+<td class='tra'  lang='zh-Hant'>
+Copy annotation</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.action-copy-quote</td>
+<td class='tra'  lang='zh-Hant'>
+Copy as quote</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.action-copy-selection-link</td>
+<td class='tra'  lang='zh-Hant'>
+Copy link to selection</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.action-copy-annot-link</td>
+<td class='tra'  lang='zh-Hant'>
+Copy link to annotation</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.action-copy-section-link</td>
+<td class='tra'  lang='zh-Hant'>
+Copy link to section</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.action-copy-section-link-title</td>
+<td class='tra'  lang='zh-Hant'>
+Copy link to “{{title}}”</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.action-copy-page-link</td>
+<td class='tra'  lang='zh-Hant'>
+Copy link to page {{page}}</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.msg-max-search-results</td>
+<td class='tra'  lang='zh-Hant'>
+{{current}} of over {{limit}} matches</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.msg-search-count</td>
+<td class='tra'  lang='zh-Hant'>
+{{current}} of {{total}} match</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.msg-search-count_plural</td>
+<td class='tra'  lang='zh-Hant'>
+{{current}} of {{total}} matches</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.msg-password-protected</td>
+<td class='tra'  lang='zh-Hant'>
+This PDF is password protected</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.msg-invalid-password</td>
+<td class='tra'  lang='zh-Hant'>
+Invalid password</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.msg-enter-password</td>
+<td class='tra'  lang='zh-Hant'>
+Enter the password below</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.label-of-pages</td>
+<td class='tra'  lang='zh-Hant'>
+of {{count}}</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.label-page-of-pages</td>
+<td class='tra'  lang='zh-Hant'>
+({{current}} of {{count}})</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.label-spread-single</td>
+<td class='tra'  lang='zh-Hant'>
+Single page</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.label-spread-odd</td>
+<td class='tra'  lang='zh-Hant'>
+Two page (odd)</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.label-spread-even</td>
+<td class='tra'  lang='zh-Hant'>
+Two page (even)</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.tooltip-sidebar-options</td>
+<td class='tra'  lang='zh-Hant'>
+Sidebar options</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.tooltip-display-options</td>
+<td class='tra'  lang='zh-Hant'>
+Display options</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.label-adapt-to-theme</td>
+<td class='tra'  lang='zh-Hant'>
+Adapt to theme</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.label-page</td>
+<td class='tra'  lang='zh-Hant'>
+page {{page}}</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.page_landmark</td>
+<td class='tra'  lang='zh-Hant'>
+Page {{page}}</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.thumb_page_title</td>
+<td class='tra'  lang='zh-Hant'>
+Page {{page}}</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.thumb_page_canvas</td>
+<td class='tra'  lang='zh-Hant'>
+Page {{page}}</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.text_annotation_type</td>
+<td class='tra'  lang='zh-Hant'>
+[{{type}} Annotation]</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+pdf.annotation_date_string</td>
+<td class='tra'  lang='zh-Hant'>
+{{date}}, {{time}}</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.types.option-multitext</td>
+<td class='tra'  lang='zh-Hant'>
+List</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.types.option-unknown</td>
+<td class='tra'  lang='zh-Hant'>
+Unknown</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.types.option-text</td>
+<td class='tra'  lang='zh-Hant'>
+Text</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.types.option-aliases</td>
+<td class='tra'  lang='zh-Hant'>
+Aliases</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.types.option-tags</td>
+<td class='tra'  lang='zh-Hant'>
+Tags</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.types.option-date</td>
+<td class='tra'  lang='zh-Hant'>
+Date</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.types.option-datetime</td>
+<td class='tra'  lang='zh-Hant'>
+Date &amp; time</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.types.option-number</td>
+<td class='tra'  lang='zh-Hant'>
+Number</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.types.option-checkbox</td>
+<td class='tra'  lang='zh-Hant'>
+Checkbox</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.value-suggestion.key-link-note</td>
+<td class='tra'  lang='zh-Hant'>
+Type [[</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.value-suggestion.instruction-link-note</td>
+<td class='tra'  lang='zh-Hant'>
+to link note</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.value-suggestion.instruction-dismiss</td>
+<td class='tra'  lang='zh-Hant'>
+to dismiss</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.option-property-type</td>
+<td class='tra'  lang='zh-Hant'>
+Property type</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.msg-invalid-tag</td>
+<td class='tra'  lang='zh-Hant'>
+Invalid tag name</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.msg-invalid-number</td>
+<td class='tra'  lang='zh-Hant'>
+Invalid number</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.label-no-value</td>
+<td class='tra'  lang='zh-Hant'>
+No value</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.label-heading</td>
+<td class='tra'  lang='zh-Hant'>
+Properties</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.label-add-property-button</td>
+<td class='tra'  lang='zh-Hant'>
+Add property</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.label-type-mismatch-warning</td>
+<td class='tra'  lang='zh-Hant'>
+Type mismatch, expected {{type}}</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+properties.label-migration-warning-desc</td>
+<td class='tra'  lang='zh-Hant'>
+Are you sure you want to change the type? Some of the data associated with this property key is incompatible.</td>
+</tr>
+<tr class='i'>
+<td class='src' >
 nouns.word-with-count</td>
 <td class='tra'  lang='zh-Hant'>
 {{count}} 個詞</td>
@@ -10510,6 +11236,18 @@ nouns.backlink-with-count</td>
 nouns.backlink-with-count_plural</td>
 <td class='tra'  lang='zh-Hant'>
 {{count}} 個反向連結</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+nouns.properties-with-count</td>
+<td class='tra'  lang='zh-Hant'>
+{{count}} property</td>
+</tr>
+<tr class='i'>
+<td class='src' >
+nouns.properties-with-count_plural</td>
+<td class='tra'  lang='zh-Hant'>
+{{count}} properties</td>
 </tr>
 <tr class='i'>
 <td class='src' >
